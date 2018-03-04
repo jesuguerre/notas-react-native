@@ -1,4 +1,4 @@
-# Usar TypeScript en tu proyecto
+# Configurar TypeScript en tu proyecto
 
 TypeScript permite que el autocompletado de tu editor de texto sea mejor,
 al mismo tiempo te avisa si estás usando una función con unos parámetros
@@ -8,9 +8,7 @@ comprobaciones se hacen en el momento de compilación.
 **Nota**: en está guía usamos `yarn` como gestor de paquetes en lugar de
 `npm`. La mayoría de comandos son equivalentes entre las dos herramientas.
 
-## Configuraciones
-
-### package.json
+## package.json
 
 Lo primero es añadir las dependencias necesarias. Esta es una configuración básica:
 
@@ -42,7 +40,7 @@ de tipos relacionadas a estas. Si ya tenemos el compilador de TypeScript
 instalado en el sistema podemos saltarnos la última línea, pero tenerlo
 así nos permite compartir el proyecto con gente que no lo tenga instalado.
 
-### tsconfig.json
+## tsconfig.json
 
 ```
 {
@@ -70,7 +68,7 @@ La compilación no puede ser más fácil, simplemente hay que ejecutar
 archivo (que viene muy bien para el _live reload_ de React Native) cambiamos
 ligeramente el comando a `yarn run tsc -w`. La _w_ viene de _watch_.
 
-### index.js
+## index.js
 
 Por defecto el archivo principal del proyecto `index.js` se encuentra en
 la carpeta raíz del proyecto. Tendremos que cambiar la segunda línea para
@@ -80,7 +78,7 @@ que pueda encontrar los archivos JavaScript generados:
 import App from './lib/App';
 ```
 
-### Estructura del proyecto
+## Estructura del proyecto
 
 Al final tendremos un proyecto con esta estructura más o menos:
 
